@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+         warun games
+    </title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="body" onload="idleAnimationStart(); createBoxes();" 
+onkeypress="keyCheck(event);" >
+
+
+<div class="background" id="background">
+    <img src="resources/Idele (1).png" class="dog" id="dog">
+</div>
+
+
+<div class="score" id="score">Score=0</div> 
+<div class="end" id="end">
+    <div style="color:hwb(59 0% 0%);">GAME OVER </div>
+    <div style="color:hwb(59 0% 0%); font-size:50px;">Your Score </div>
+    <div style="color:hwb(0 100% 0%);" id="endscore">0 </div>
+    <button class="btn" onclick="reload()">Try Again</button>
+</div>
+<div class="win" id="win">
+    <div style="color:hwb(59 0% 0%);">YOU WON!</div>
+    <div style="color:hwb(59 0% 0%); font-size:50px;">Final Score</div>
+    <div style="color:hwb(0 100% 0%);" id="winscore">0</div>
+    <button class="btn" onclick="reload()">Play Again</button>
+</div>
+
+
+<audio id="jumpSound" src="resources/jump.wav"></audio>
+<audio id="endSound" src="resources/gameover.wav"></audio>
+<audio id="winSound" src="resources/win.wav"></audio>
+
+
+<script src="script.js" defer>
+
+
+
+
+</script>
+
+</body>
+</html> 
